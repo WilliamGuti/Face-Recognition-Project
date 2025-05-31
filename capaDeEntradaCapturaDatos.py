@@ -4,7 +4,7 @@ import os  # used to create directories with Python code
 import imutils
 
 model_name = 'WilliamPhotos'  # name of the folder to be created
-base_path = 'C:/Users/w/OneDrive/Desktop/proyectoReconocimientoDeImagenes/reconocimientoFacial1CapturaDatos'
+base_path = 'path where you will save or create model'
 full_path = base_path + '/' + model_name
 
 # create the directory if it doesn't exist
@@ -13,7 +13,7 @@ if not os.path.exists(full_path):
 
 # pre-trained classifier for frontal face detection
 face_cascade = cv.CascadeClassifier(
-    'C:/Users/w/OneDrive/Desktop/proyectoReconocimientoDeImagenes/entrenamientosOpencvRuidos/opencv-master/data/haarcascades/haarcascade_frontalface_default.xml'
+    'path where your opencv model / opencv-master/data/haarcascades/haarcascade_frontalface_default.xml'
 )
 
 # activate webcam
